@@ -5,62 +5,60 @@
     <title>Undergraduate Research Opportunity</title>
 
     <style>
-        body {
-            margin: 0;
-            padding: 30px 20px;
-            background-color: #E5E7EB;
-            color: #1F2937;
+    /* 1. @import MUST be at the very top, before any other CSS */
+    @import url('https://googleapis.com');
 
+    /* 2. Page-wide styles */
+    body { 
+        margin: 0; 
+        padding: 30px 20px; 
+        background-color: #E5E7EB; 
+        color: #1F2937; 
+        text-align: center; /* Moved out of the nested mess */
+    }
 
-        @import url('https://googleapis.com');
+    /* 3. Apply the font to the body, buttons, and class-based buttons */
+    body, button, .button { 
+        font-family: 'Comic Neue', cursive; 
+    }
 
-        /* Notice the comma between body and button */
-        body, button {
-            font-family: 'Comic Neue', cursive;
-        }
-    
+    /* 4. Layout and elements */
+    .container { 
+        max-width: 800px; 
+        margin: auto; 
+    }
 
-            
-            text-align: center;
-        }
+    h1 { 
+        font-size: 36px; 
+        margin-bottom: 25px; 
+    }
 
+    .research-image { 
+        width: 100%; 
+        max-width: 750px; 
+        height: auto; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+    }
 
-        
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
+    .button { 
+        display: inline-block; 
+        margin-top: 30px; 
+        padding: 16px 32px; 
+        background-color: #696969; 
+        color: white; 
+        text-decoration: none; 
+        border-radius: 8px; 
+        font-size: 21px; 
+        font-weight: bold; 
+        box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+    }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 25px;
-        }
+    .button:hover { 
+        background-color: #12566D; 
+    } 
+</style>
 
-        .research-image {
-            width: 100%;
-            max-width: 750px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 16px 32px;
-            background-color: #696969;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 21px;
-            font-weight: bold;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-        }
-
-        .button:hover {
-            background-color: #12566D;
-        }
-    </style>
 </head>
 
 <body>
